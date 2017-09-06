@@ -5,7 +5,7 @@ int endY = 150;
 void setup()
 {
   size(300,300);
-  strokeWeight(20);
+  strokeWeight(5);
   background(0);
 }
 void draw()
@@ -16,6 +16,8 @@ void draw()
 		endX= startX + (int)(Math.random()*10);
 		endY= startY + (int)(Math.random()*10);
 		line(startX,startY,endX,endY);
+		startX =endX;
+		startY =endY;
 	}
 }
 void mousePressed()
